@@ -1,0 +1,125 @@
+
+// 修改element元素样式
+.el-table--border, .el-table--group{
+  border:1px solid #236f93;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+  background-color:  #236f93;
+}
+.el-table .cell{
+  color: #fff;
+  text-align: center;
+}
+.el-table th>.cell{
+  color: #44f0e9;
+  font-weight: 500;
+}
+.el-table th, .el-table tr{
+  background-color: transparent;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+  background-color: #060b45;
+}
+.el-table td, .el-table th{
+  padding: 10px 0;
+}
+.el-table td, .el-table th.is-leaf{
+  border-color: #236f93;
+}
+.el-table--border th.gutter:last-of-type{
+  border-bottom: 1px solid #236f93;
+}
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed{
+  border-color: #236f93;
+}
+.el-table .el-table__empty-text{
+  color: #fff;
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar {
+  width: 4px;
+  height: 1px;
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar-thumb { //滑块部分
+  border-radius: 2px;
+  background-color: rgba(0, 234, 255,.5);
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar-track { //轨道部分
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,.5);
+  border-radius: 5px;
+
+}
+// 下拉选择器
+.el-form-item {
+  .el-form-item__label {
+    color: #fff;
+  }
+  .el-form-item__content {
+    .el-select {
+      .el-input__inner {
+        background-color: transparent;
+        border-color: rgba(2, 206, 219, 0.5);
+        color: #fff;
+      }
+    }
+  }
+}
+.el-select-dropdown {
+  background-color: #071966;
+  border-color: rgba(2, 206, 219, 0.5);
+  color: #fff;
+}
+.el-select-dropdown__item{
+  color: #fff;
+}
+.el-popper[x-placement^=bottom] .popper__arrow{
+  border-bottom-color:#37cfe6;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+  background-color: rgba(2, 206, 219, 0.5);
+  color: #fff;
+}
+.el-select-dropdown__item.selected{
+  color: #37cfe6;
+}
+
+.el-notification {
+  background-color: #ca4141;
+  border-color: #f9d3d3;
+  transform: all 1s !important;
+  box-shadow: 0 0 10px #000;
+  animation:  box-shadow-call  2s linear infinite;
+  
+}
+.el-icon-warning {
+  color: #ffc978;
+}
+.el-notification__title{
+  color: #ffb52fb8;
+}
+.el-notification__content {
+  color: #ffdfdf;
+}
+.el-notification__closeBtn {
+  color: #fff;
+}
+
+.tag-custom{
+  width: 80%;
+  max-width: 70px;
+}
+.tag-normal{
+  background-color: transparent;
+  color: #37cfe6;
+  border-color: #37cfe6;
+}
+.tag-leave{
+  background-color: #37cfe6;
+  color: #071966;
+  border-color: #37cfe6;
+}
+.tag-offline{
+  background-color: #a7a7a7;
+  color: #fff;
+  border-color: #a7a7a7;
+}
