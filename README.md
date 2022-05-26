@@ -1,6 +1,6 @@
 # big_data
 
-> rzkg big data
+> big data
 ## Build Setup
 
 
